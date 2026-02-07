@@ -1,0 +1,51 @@
+<style>
+        *{
+            Margin:0; padding:0;
+        }
+        nav{
+            padding:5px;
+        }
+          nav a{
+            text-decoration: none;
+            margin-left:35px;
+            color:darkred;
+            padding:10px;
+           
+        }
+        header{
+            background-color: cyan;
+             height:30px;
+          
+        }
+        #number1{
+            background-color: green;
+            height:50px;
+            width:50px;
+            border:5px solid orange;
+            border-radius: 50%;
+
+        }
+        .ccontainer{
+            height:100px; width:100px;
+            background-color: rgb(201, 132, 109);
+            margin:5px;
+            display:inline-block;
+        }
+        #abc{
+            border: 4px double darkgoldenrod;
+            margin:5px;
+            
+        }
+         #fixed-block{
+            height:50px;
+            width:50px;
+            background-color: fuchsia;
+            padding:10px;
+            position:fixed;
+            right:10px;
+        }
+       footer{
+        position:fixed;
+        bottom:1px;
+       }
+</style>
