@@ -86,7 +86,6 @@
     display: flex;
     align-items: center;
     margin-right: 25px;
-    
     padding-left:0px;
 
 }
@@ -100,6 +99,7 @@
     font-size: 14px;
     border: 0px;
     border-radius: 0px 3px 3px 0px;
+    padding-left: 10px;
 
 }
 
@@ -109,7 +109,7 @@
     height:20px;
     padding:10px;
     background-color: #F5F5F6;
-    color:#696e79;
+    color:#818794;
     border-radius: 3px 0px 0px 3px;
 }
 
@@ -136,5 +136,84 @@
 }
 #profile-color:hover{
     border-bottom: 3.5px solid #f26a10;
+}
+.banner{
+    margin:50px 0px;
+}
+.banner_image{
+    width: 100%;
+}
+.brands{
+    width: 100%;
+    text-transform: uppercase;
+    padding:30px 35px;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 28.8px;
+}
+
+.brand_images{
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.images{
+    width:250px
+}
+.cat{
+     width: 100%;
+    text-transform: uppercase;
+    padding:70px 0px 40px 35px;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 28.8px;
+}
+.categories_shop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.categories{
+    width: calc(16.66% - 20px); 
+    margin: 10px;
+}
+
+
+
+.popular_options{
+    display: flex;
+    justify-content:space-around;
+    padding-top: 100px;
+}
+.popular_options_title{
+    color: #282c3f;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.online_shopping_links{
+    display: block;
+    font-size: 15px;
+    color:#696B79;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.customer_policies_links{
+    display: block;
+    font-size: 15px;
+    color:#696B79;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.stores{
+    width:100px;
+    display: inline;
+    margin:5px 0px 10px 0px;
+}
+#play_store{
+    width:120px;
 }
    
