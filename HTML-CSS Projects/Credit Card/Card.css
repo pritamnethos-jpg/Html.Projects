@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:dimgrey;
+}
+.container{
+    position: relative;
+    background-image: url(Assets/bg.png);
+    background-size: cover;
+    max-width: 380px;
+    width: 100%;
+    padding: 25px 25px 20px 25px;
+    border-radius: 28px;
+    color: white;
+}
+
+
+.container {
+    overflow: hidden; /* Keeps the shine inside the card boundaries */
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* The Shine Element */
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        to right, 
+        rgba(255, 255, 255, 0) 0%, 
+        rgba(255, 255, 255, 0.2) 50%, 
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: skewX(-25deg);
+}
+
+/* Animation on Hover */
+.container:hover::before {
+    left: 150%;
+    transition: all 0.7s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Subtle lift effect */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
+
+
+.logo img{
+    width: 48px;
+}
+.chip{
+    width: 60px;
+    opacity: 0.9;
+}
+header, .logo {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+h5{
+    padding-left: 10px;
+    font-size: 17px;
+    font-weight: 600;
+}
+main .number h6{
+    padding-top: 30px;
+    font-size: 14px;
+} 
+main .number h4{
+    font-size: 100%;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+footer{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+footer h5{
+    padding: 0px;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 17px;
+}
+footer .valid h6{
+    font-size: 13px;
+}
+footer .valid h4{
+    font-size: 100%;
+    font-weight: 500;
+}
