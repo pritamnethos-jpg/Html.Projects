@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+        *{
+            background-color: rgb(252, 180, 180);
+        }
+        .beautify{
+            background-color:rgb(209, 225, 249);
+            color: rgb(4, 14, 4);
+            border: 5px outset #888;
+            padding: 5px;
+            margin-right: 10px;
+            border-radius: 20px;
+        }
+        .beautify:hover{
+            background-color: rgb(126, 154, 255);
+        }
+    </style>
+</head>
+<body>
+    <button class="beautify" onclick="
+        console.log(`Cart Quantity:${cartQuantity}`)
+        " >Show Quantity</button>
+
+
+    <button class="beautify" onclick="
+    cartQuantity+=1;
+    console.log(`Cart Quantity:${cartQuantity}`);
+    ">Add to Cart</button>
+
+
+    <button class="beautify" onclick="
+    cartQuantity+=2;
+    console.log(`Cart Quantity:${cartQuantity}`);
+    ">+2</button>
+
+
+    <button class="beautify" onclick="
+    cartQuantity+=3;
+    console.log(`Cart Quantity:${cartQuantity}`);
+    ">+3</button>
+
+
+    <button class="beautify" onclick="
+    cartQuantity+=4;
+    console.log(`Cart Quantity:${cartQuantity}`);
+    ">+4</button>
+
+
+    <button class="beautify" onclick="
+    cartQuantity+=5;
+    console.log(`Cart Quantity:${cartQuantity}`);
+    ">+5</button>
+
+
+    <button class="beautify" onclick="
+    cartQuantity=0;
+    console.log(`Cart Quantity:${cartQuantity}`);
+    ">Reset Cart</button>
+
+    <button class="beautify" onclick="
+    cartQuantity=1;
+    console.log(`Cart Quantity:${cartQuantity}`);
+    ">Remove From Cart</button>
+
+
+    <script>
+        let cartQuantity = 0;
+
+    </script>
+</body>
+</html>
